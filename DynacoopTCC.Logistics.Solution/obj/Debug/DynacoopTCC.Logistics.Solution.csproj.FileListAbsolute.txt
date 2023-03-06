@@ -1,0 +1,88 @@
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\DynacoopTCC.Logistics.Solution.exe.config
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\DynacoopTCC.Logistics.Solution.exe
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\DynacoopTCC.Logistics.Solution.pdb
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Xrm.Sdk.Deployment.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Xrm.Tooling.Connector.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Newtonsoft.Json.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\System.Buffers.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\System.Memory.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\System.Text.Json.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\System.ValueTuple.dll
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Xrm.Sdk.Deployment.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Xrm.Tooling.Connector.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\Newtonsoft.Json.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\System.Buffers.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\System.Memory.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\System.Text.Json.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\bin\Debug\System.ValueTuple.xml
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\obj\Debug\DynacoopTCC.Logistics.Solution.csproj.AssemblyReference.cache
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\obj\Debug\DynacoopTCC.Logistics.Solution.csproj.SuggestedBindingRedirects.cache
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\obj\Debug\DynacoopTCC.Logistics.Solution.csproj.CoreCompileInputs.cache
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\obj\Debug\DynacoopTCC.Logistics.Solution.csproj.CopyComplete
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\obj\Debug\DynacoopTCC.Logistics.Solution.exe
+C:\Users\SAMSUNG\source\repos\DynacoopTCC.Logistics.Solution\DynacoopTCC.Logistics.Solution\obj\Debug\DynacoopTCC.Logistics.Solution.pdb
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\DynacoopTCC.Logistics.Solution.exe.config
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\DynacoopTCC.Logistics.Solution.exe
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\DynacoopTCC.Logistics.Solution.pdb
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Xrm.Sdk.Deployment.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Xrm.Tooling.Connector.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\System.Buffers.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\System.Memory.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\System.Text.Json.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\System.ValueTuple.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Xrm.Sdk.Deployment.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Microsoft.Xrm.Tooling.Connector.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\System.Buffers.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\System.Memory.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\System.Text.Json.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\System.ValueTuple.xml
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\obj\Debug\DynacoopTCC.Logistics.Solution.csproj.AssemblyReference.cache
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\obj\Debug\DynacoopTCC.Logistics.Solution.csproj.SuggestedBindingRedirects.cache
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\obj\Debug\DynacoopTCC.Logistics.Solution.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\obj\Debug\DynacoopTCC.Logistics.Solution.csproj.CopyComplete
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\obj\Debug\DynacoopTCC.Logistics.Solution.exe
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\obj\Debug\DynacoopTCC.Logistics.Solution.pdb
