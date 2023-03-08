@@ -86,3 +86,6 @@ C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.S
 C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\obj\Debug\DynacoopTCC.Logistics.Solution.csproj.CopyComplete
 C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\obj\Debug\DynacoopTCC.Logistics.Solution.exe
 C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\obj\Debug\DynacoopTCC.Logistics.Solution.pdb
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\DynacoopTCC.Logistics.Plugin.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\DynacoopTCC.Logistics.Plugin.pdb
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Solution\bin\Debug\DynacoopTCC.Logistics.Plugin.dll.config

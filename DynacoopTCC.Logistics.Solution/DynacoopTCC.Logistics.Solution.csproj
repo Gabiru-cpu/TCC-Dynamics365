@@ -126,6 +126,12 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DynacoopTCC.Logistics.Plugin\DynacoopTCC.Logistics.Plugin.csproj">
+      <Project>{75fc6d3f-36ce-43fe-a853-f6fa2e405d76}</Project>
+      <Name>DynacoopTCC.Logistics.Plugin</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.2\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.2\build\System.Text.Json.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
