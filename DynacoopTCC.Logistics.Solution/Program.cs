@@ -21,8 +21,8 @@ namespace DynacoopTCC.Logistics.Solution
             productPostImage["productnumber"] = "PROD-678";
             productPostImage["defaultuomscheduleid"] = new EntityReference("uomschedule", new Guid("db1bbf1d-7a63-4ddd-9ea8-8e533d9ee80b"));
             productPostImage["defaultuomid"] = new EntityReference("uom", new Guid("14e9cecb-c1b7-4e59-9905-f0010ddbe79a"));
-            // Define as credenciais para o segundo ambiente do Dynamics
-            string environment1Url = "" + "logisticsproducts";
+            
+            string environment1Url = "logisticsproducts";
             string clientId1 = "c1fa970e-36ff-4ca3-af66-02523e5b0b79";
             string clientSecret1 = "iDt8Q~49_eoxOAG2jNxAaz~v9TqFpT4F7ZE~caiy";
 
@@ -32,11 +32,10 @@ namespace DynacoopTCC.Logistics.Solution
             string clientId2 = "83d4b16a-8f9c-4a05-a9b4-1c55f85e51fa";
             string clientSecret2 = "LrI8Q~fpWCD6WzR61Egceu2Ee_DsdzptztM6bcsc";
 
-            // Cria conexões para os dois ambientes do Dynamics            
+                       
             CrmServiceClient environment2Connection = new CrmServiceClient($"AuthType=ClientSecret;Url=https://{environment2Url}.crm2.dynamics.com/;AppId={clientId2};ClientSecret={clientSecret2};");
 
-            // Exemplo: criar uma nova entidade no ambiente 1 e copiá-la para o ambiente 2
-            var product = new Entity("product"); //product                        
+            var product = new Entity("product");                       
 
             product["name"] = productPostImage["name"];
             product["productnumber"] = productPostImage["productnumber"];
@@ -47,7 +46,7 @@ namespace DynacoopTCC.Logistics.Solution
 
             EntityReference defaultUomScheduleid = (EntityReference)productPostImage["defaultuomscheduleid"];
             
-            ControllerUnityGroup controllerUnityGroupDestiny = new ControllerUnityGroup(environment2Connection);
+            ControllerUnitGroup controllerUnityGroupDestiny = new ControllerUnitGroup(environment2Connection);
             
             var unityGroup = controllerUnityGroupDestiny.GetById(defaultUomScheduleid.Id, new string[] { "uomscheduleid" });
 
@@ -58,7 +57,7 @@ namespace DynacoopTCC.Logistics.Solution
             else
             {
 
-                ControllerUnityGroup controllerUnityGroupOrigin = new ControllerUnityGroup(environment1Connection);
+                ControllerUnitGroup controllerUnityGroupOrigin = new ControllerUnitGroup(environment1Connection);
 
                 var unityGroupOrigin = controllerUnityGroupOrigin.GetById(defaultUomScheduleid.Id, new string[] { "uomscheduleid", "name", "baseuomname" });
 

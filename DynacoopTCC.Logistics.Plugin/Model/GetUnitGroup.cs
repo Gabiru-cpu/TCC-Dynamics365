@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace DynacoopTCC.Logistics.Plugin.Model
 {
-    public class GetUnityGroup
+    public class GetUnitGroup
     {
         public IOrganizationService ServiceClient { get; set; }
 
         public string Logicalname { get; set; }
 
-        public GetUnityGroup(IOrganizationService crmServiceClient)
+        public GetUnitGroup(IOrganizationService crmServiceClient)
         {
             this.ServiceClient = crmServiceClient;
             this.Logicalname = "uomschedule";

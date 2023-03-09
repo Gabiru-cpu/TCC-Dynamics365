@@ -8,20 +8,20 @@ using System.Threading.Tasks;
 
 namespace DynacoopTCC.Logistics.Plugin.Controller
 {
-    public class ControllerUom
+    public class ControllerUnitGroup
     {
         public IOrganizationService ServiceClient { get; set; }
-        public GetUom GetUom { get; set; }
+        public GetUnitGroup getUnityGroup { get; set; }
 
-        public ControllerUom(IOrganizationService crmServiceClient)
+        public ControllerUnitGroup(IOrganizationService crmServiceClient)
         {
             ServiceClient = crmServiceClient;
-            this.GetUom = new GetUom(ServiceClient);
+            this.getUnityGroup = new GetUnitGroup(ServiceClient);
         }
 
         public Entity GetById(Guid id, string[] columns)
         {
-            return GetUom.GetById(id, columns);
+            return getUnityGroup.GetById(id, columns);
         }
 
     }

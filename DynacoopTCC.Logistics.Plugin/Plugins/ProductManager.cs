@@ -11,70 +11,69 @@ using System.Threading.Tasks;
 
 namespace DynacoopTCC.Logistics.Plugin.Plugins
 {
-    public class ProductMenager : PluginCore
+    public class ProductManager : PluginCore
     {
         public override void ExecutePlugin(IServiceProvider serviceProvider)
-        {            
+        {
             Entity productPostImage = (Entity)Context.PostEntityImages["PostImage"];
 
-            // Define as credenciais para o segundo ambiente do Dynamics
+            string environment1Url = "logisticsproducts";
+            string clientId1 = "c1fa970e-36ff-4ca3-af66-02523e5b0b79";
+            string clientSecret1 = "iDt8Q~49_eoxOAG2jNxAaz~v9TqFpT4F7ZE~caiy";
+
+            CrmServiceClient environment1Connection = new CrmServiceClient($"AuthType=ClientSecret;Url=https://{environment1Url}.crm2.dynamics.com/;AppId={clientId1};ClientSecret={clientSecret1};");
+
             string environment2Url = "logisticsplugin";
             string clientId2 = "83d4b16a-8f9c-4a05-a9b4-1c55f85e51fa";
             string clientSecret2 = "LrI8Q~fpWCD6WzR61Egceu2Ee_DsdzptztM6bcsc";
 
-            // Cria conexões para os dois ambientes do Dynamics            
+
             CrmServiceClient environment2Connection = new CrmServiceClient($"AuthType=ClientSecret;Url=https://{environment2Url}.crm2.dynamics.com/;AppId={clientId2};ClientSecret={clientSecret2};");
 
-            // Exemplo: criar uma nova entidade no ambiente 1 e copiá-la para o ambiente 2
-            var product = new Entity("product"); //product                        
+            var product = new Entity("product");
 
             product["name"] = productPostImage["name"];
-
             product["productnumber"] = productPostImage["productnumber"];
+            product["defaultuomscheduleid"] = productPostImage["defaultuomscheduleid"];
+            product["defaultuomid"] = productPostImage["defaultuomid"];
 
             product["atv_verificarimplementacao"] = true;
 
             EntityReference defaultUomScheduleid = (EntityReference)productPostImage["defaultuomscheduleid"];
-            TracingService.Trace("Passou o EntityReference");
-            ControllerUnityGroup controllerUnityGroupDestiny = new ControllerUnityGroup(environment2Connection);
-            TracingService.Trace("Passou o Controller");
+
+            ControllerUnitGroup controllerUnityGroupDestiny = new ControllerUnitGroup(environment2Connection);
+
             var unityGroup = controllerUnityGroupDestiny.GetById(defaultUomScheduleid.Id, new string[] { "uomscheduleid" });
 
-            if(unityGroup != null)
+            if (unityGroup != null)
             {
                 product["defaultuomscheduleid"] = productPostImage["defaultuomscheduleid"];
-                TracingService.Trace("entrou no if");
-            }            
+            }
             else
             {
-                TracingService.Trace("entrou no else");
-                ControllerUnityGroup controllerUnityGroupOrigin = new ControllerUnityGroup(Service);
-                TracingService.Trace("passou o unitygroupORIGIN");
-                var unityGroupOrigin = controllerUnityGroupOrigin.GetById(defaultUomScheduleid.Id, new string[] { "uomscheduleid" , "name" });
-                TracingService.Trace("passou o id e o nome");
+
+                ControllerUnitGroup controllerUnityGroupOrigin = new ControllerUnitGroup(environment1Connection);
+
+                var unityGroupOrigin = controllerUnityGroupOrigin.GetById(defaultUomScheduleid.Id, new string[] { "uomscheduleid", "name", "baseuomname" });
+
                 Entity unityGroup1 = new Entity("uomschedule");
-                TracingService.Trace("passou a entity da tabela");
-                
-                if(unityGroupOrigin != null)
-                    TracingService.Trace("unityGroupOrigin !null");
-                else
-                    TracingService.Trace("unityGroupOrigin =null");
 
-                TracingService.Trace("default" + defaultUomScheduleid.Id);
 
-                unityGroup1["name"] = unityGroupOrigin["name"];
-                TracingService.Trace("passou o valor nm");
+                unityGroup1["name"] = unityGroupOrigin["name"] + " teste";
+
                 unityGroup1["uomscheduleid"] = unityGroupOrigin["uomscheduleid"];
-                TracingService.Trace("passou o valor ID");
+                unityGroup1["baseuomname"] = unityGroupOrigin["baseuomname"] + " teste";
+
+
                 environment2Connection.Create(unityGroup1);
-                TracingService.Trace("Criou o produto");
+
             }
-            TracingService.Trace("Passou o 1 if");
+
 
             EntityReference defaultuomid = (EntityReference)productPostImage["defaultuomid"];
-            TracingService.Trace("Passou o EntityReference2");
+
             ControllerUom controllerUomDestiny = new ControllerUom(environment2Connection);
-            TracingService.Trace("Passou o Controller2");
+
             var uomGroup = controllerUomDestiny.GetById(defaultuomid.Id, new string[] { "uomid" });
 
             if (uomGroup != null)
@@ -83,19 +82,19 @@ namespace DynacoopTCC.Logistics.Plugin.Plugins
             }
             else
             {
-                ControllerUom controllerUomOrigin = new ControllerUom(Service);
-                var unityGroupOrigin = controllerUomOrigin.GetById(defaultuomid.Id, new string[] { "uomid", "name", "quantity" });
+                ControllerUom controllerUomOrigin = new ControllerUom(environment1Connection);
+                var unityGroupOrigin = controllerUomOrigin.GetById(defaultuomid.Id, new string[] { "uomid", "name", "quantity", "uomscheduleid" });
                 uomGroup = new Entity("uom");
 
+                uomGroup["uomscheduleid"] = unityGroupOrigin["uomscheduleid"];
                 uomGroup["uomid"] = unityGroupOrigin["uomid"];
                 uomGroup["name"] = unityGroupOrigin["name"];
                 uomGroup["quantity"] = unityGroupOrigin["quantity"];
 
                 environment2Connection.Create(uomGroup);
             }
-            TracingService.Trace("Passou o 2 if");
+
             environment2Connection.Create(product);
-            TracingService.Trace("Passou a criacao");
         }
     }
 }
