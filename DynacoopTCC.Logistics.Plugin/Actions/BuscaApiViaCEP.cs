@@ -37,23 +37,23 @@ namespace DynacoopTCC.Logistics.Plugin.Actions
 
         public override void ExecuteAction(CodeActivityContext context)
         {
-            GetAddressOnAPI();
+            GetAddressOnAPI(context);            
         }
 
-        private RestResponse GetAddressOnAPI()
+        private void GetAddressOnAPI(CodeActivityContext context)
         {
             this.Log += "GetAddressOnAPI";
-            var CEP = this.Cep;
-
-            var options = new RestClientOptions($"viacep.com.br/ws/{CEP}/json/");
+            
+            var options = new RestClientOptions($"viacep.com.br/ws/{Cep.Get(context)}/json/");
 
             var address = new RestClient(options);
             var request = new RestRequest("/account", Method.Post);
             RestResponse response = address.Execute(request);
-            return response;
+                        
+            GetAddressWithCEP(context, response);
         }
 
-        private AccountAddressVO GetAddressWithCEP(CodeActivityContext context, RestResponse response)
+        private void GetAddressWithCEP(CodeActivityContext context, RestResponse response)
         {
             this.Log += "GetProductWithID";
 
@@ -61,12 +61,16 @@ namespace DynacoopTCC.Logistics.Plugin.Actions
 
             AccountAddressVO accountAddressVO = JsonConvert.DeserializeObject<AccountAddressVO>(response.Content);
 
-            logradouro = logradouro.Set();
+            logradouro.Set(context, accountAddressVO.logradouro);
+            complemento.Set(context, accountAddressVO.complemento);
+            bairro.Set(context, accountAddressVO.bairro);
+            localidade.Set(context, accountAddressVO.localidade);
+            uf.Set(context, accountAddressVO.uf);
+            ibge.Set(context, accountAddressVO.ibge);
+            ddd.Set(context, accountAddressVO.ddd);
 
             this.Log += "Converteu JSON";
-
-            return accountAddressVO;
-
+            
         }
 
     }
