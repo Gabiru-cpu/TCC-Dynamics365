@@ -59,10 +59,10 @@ namespace DynacoopTCC.Logistics.Plugin.Plugins
                 Entity unityGroup1 = new Entity("uomschedule");
 
 
-                unityGroup1["name"] = unityGroupOrigin["name"] + " teste";
+                unityGroup["name"] = unityGroupOrigin["name"] + " teste";
 
-                unityGroup1["uomscheduleid"] = unityGroupOrigin["uomscheduleid"];
-                unityGroup1["baseuomname"] = unityGroupOrigin["baseuomname"] + " teste";
+                unityGroup["uomscheduleid"] = unityGroupOrigin["uomscheduleid"];
+                unityGroup["baseuomname"] = unityGroupOrigin["baseuomname"] + " teste";
 
 
                 environment2Connection.Create(unityGroup1);
