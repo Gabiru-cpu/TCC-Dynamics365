@@ -147,7 +147,6 @@
   <ItemGroup>
     <Compile Include="Actions\BuscaApiViaCEP.cs" />
     <Compile Include="Controller\ControllerOpportunity.cs" />
-    <Compile Include="Controller\ControllerAccount.cs" />
     <Compile Include="Controller\ControllerUom.cs" />
     <Compile Include="Controller\ControllerUnitGroup.cs" />
     <Compile Include="Controller\ControllerProduct.cs" />
@@ -158,6 +157,7 @@
     <Compile Include="Model\GetUom .cs" />
     <Compile Include="Model\GetUnitGroup.cs" />
     <Compile Include="Model\GetProduct.cs" />
+    <Compile Include="Plugins\ContactManager.cs" />
     <Compile Include="Plugins\OpportunityManager.cs" />
     <Compile Include="Plugins\AccountManager.cs" />
     <Compile Include="Plugins\ProductManager.cs" />
