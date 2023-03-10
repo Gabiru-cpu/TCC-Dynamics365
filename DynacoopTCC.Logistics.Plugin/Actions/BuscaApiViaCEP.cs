@@ -15,7 +15,7 @@ namespace DynacoopTCC.Logistics.Plugin.Actions
     public class BuscaApiViaCEP : ActionCore
     {
         [Input("cep")]
-        public InArgument<string> Cep { get; set; }
+        public InArgument<string> cep { get; set; }
 
 
         [Output("logradouro")]                                               
@@ -44,10 +44,13 @@ namespace DynacoopTCC.Logistics.Plugin.Actions
         {
             this.Log += "GetAddressOnAPI";
             
-            var options = new RestClientOptions($"viacep.com.br/ws/{Cep.Get(context)}/json/");
+            var options = new RestClientOptions($"https://viacep.com.br");
 
             var address = new RestClient(options);
-            var request = new RestRequest("/account", Method.Post);
+
+            var tracingCep = this.cep.Get(context);
+            TracingService.Trace("https://viacep.com.br/ws/" + tracingCep + "/json/");
+            var request = new RestRequest($"/ws/{this.cep.Get(context)}/json/", Method.Get);
             RestResponse response = address.Execute(request);
                         
             GetAddressWithCEP(context, response);
@@ -58,7 +61,7 @@ namespace DynacoopTCC.Logistics.Plugin.Actions
             this.Log += "GetProductWithID";
 
             this.Log += response.Content;
-
+            TracingService.Trace("Antes do DeserializeObject" + response.Content);
             AccountAddressVO accountAddressVO = JsonConvert.DeserializeObject<AccountAddressVO>(response.Content);
 
             logradouro.Set(context, accountAddressVO.logradouro);
@@ -68,7 +71,7 @@ namespace DynacoopTCC.Logistics.Plugin.Actions
             uf.Set(context, accountAddressVO.uf);
             ibge.Set(context, accountAddressVO.ibge);
             ddd.Set(context, accountAddressVO.ddd);
-
+            
             this.Log += "Converteu JSON";
             
         }

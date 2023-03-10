@@ -1,0 +1,6 @@
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Customization\bin\Debug\DynacoopTCC.Logistics.Customization.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Customization\bin\Debug\DynacoopTCC.Logistics.Customization.pdb
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Customization\obj\Debug\DynacoopTCC.Logistics.Customization.csproj.AssemblyReference.cache
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Customization\obj\Debug\DynacoopTCC.Logistics.Customization.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Customization\obj\Debug\DynacoopTCC.Logistics.Customization.dll
+C:\Users\Gabriel\OneDrive\Área de Trabalho\Tcc_Dynacoop\DynacoopTCC.Logistics.Customization\obj\Debug\DynacoopTCC.Logistics.Customization.pdb
