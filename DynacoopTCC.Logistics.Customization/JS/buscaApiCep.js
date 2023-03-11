@@ -1,7 +1,7 @@
-﻿if (typeof (DynacoopTCC) == "undefined") { DynacoopTCC = {} }
-if (typeof (DynacoopTCC.Account) == "undefined") { DynacoopTCC.Account = {} }
+﻿if (typeof (Logistics) == "undefined") { Logistics = {} }
+if (typeof (Logistics.Account) == "undefined") { Logistics.Account = {} }
 
-DynacoopTCC.Account = {
+Logistics.Account = {
 	OnCepChange: function (executionContext) {
 		var formContext = executionContext.getFormContext();
 
