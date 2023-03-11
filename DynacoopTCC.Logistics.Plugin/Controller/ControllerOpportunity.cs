@@ -28,5 +28,20 @@ namespace DynacoopTCC.Logistics.Plugin.Controller
         {
             return GetOpportunity.CreateOpportunityTicket();
         }
+
+        public void IntegrateOpportunity(Entity opportunity, Entity opportunityEnvironment2, IOrganizationService organizationService, ControllerOpportunity controllerOpportunity)
+        {
+            GetOpportunity.IntegrateOpportunity(opportunity, opportunityEnvironment2, organizationService, controllerOpportunity);
+        }
+
+        public EntityReference ValidateLookup(KeyValuePair<string, object> value, IOrganizationService service, IOrganizationService service2)
+        {
+            return GetOpportunity.ValidateLookup(value, service, service2);
+        }
+
+        public string[] getIgnoreFields()
+        {
+            return GetOpportunity.getIgnoreFields();
+        }
     }
 }

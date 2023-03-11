@@ -145,6 +145,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actions\OpportunityClone.cs" />
     <Compile Include="Actions\BuscaApiViaCEP.cs" />
     <Compile Include="Controller\ControllerOpportunity.cs" />
     <Compile Include="Controller\ControllerUom.cs" />
