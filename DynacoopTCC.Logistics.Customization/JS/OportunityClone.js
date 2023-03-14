@@ -1,7 +1,7 @@
 ﻿if (typeof (Logistics) == "undefined") { Logistics = {} }
-if (typeof (Logistics.Account) == "undefined") { Logistics.Account = {} }
+if (typeof (Logistics.Opportunity) == "undefined") { Logistics.Opportunity = {} }
 
-Logistics.Account = {
+Logistics.Opportunity = {
     Ribbon: {
         var sourceOpportunityId = "{source_opportunity_guid}";
         var targetOpportunityId = "{target_opportunity_guid}";
@@ -23,5 +23,19 @@ Logistics.Account = {
                 console.log(error.message);
             }
         );
+    },
+
+    OnLoad: function (executionContext) {
+        var formContext = executionContext.getFormContext();
+        var integracao = formContext.getAttribute("dcp2_env1opp").getValue();
+        if (integracao) {
+            formContext.ui.setFormNotification("Oportunidade copiada do ambiente 1: Não pode ser editada.", "INFO", "OpportunityAlert");
+            formContext.data.entity.attributes.forEach(
+                function (attribute) {
+                    var attributeName = attribute.getName();
+                    formContext.getControl(attributeName).setDisabled(true);
+                }
+            );
+        }
     }
 }

@@ -15,7 +15,10 @@ namespace DynacoopTCC.Logistics.Plugin.Plugins
         public override void ExecutePlugin(IServiceProvider serviceProvider)
         {
             Entity opportunity = (Entity)Context.InputParameters["Target"];
+            Entity opportunityEnviroment2 = new Entity("opportunity");
             ControllerOpportunity controllerOpportunity = new ControllerOpportunity(this.Service);
+
+            IOrganizationService environment2Connection = ProductManager.Environment2Service();
 
             string ticket = controllerOpportunity.CreateOpportunityTicket();
 
@@ -25,6 +28,7 @@ namespace DynacoopTCC.Logistics.Plugin.Plugins
             }
 
             opportunity.Attributes["dcp_oppticket"] = ticket;
+            controllerOpportunity.IntegrateOpportunity(opportunity, opportunityEnviroment2, environment2Connection, controllerOpportunity);
         }
     }
 }

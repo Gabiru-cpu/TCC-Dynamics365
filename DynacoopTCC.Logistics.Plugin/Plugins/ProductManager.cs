@@ -22,13 +22,7 @@ namespace DynacoopTCC.Logistics.Plugin.Plugins
             string clientSecret1 = "iDt8Q~49_eoxOAG2jNxAaz~v9TqFpT4F7ZE~caiy";
 
             CrmServiceClient environment1Connection = new CrmServiceClient($"AuthType=ClientSecret;Url=https://{environment1Url}.crm2.dynamics.com/;AppId={clientId1};ClientSecret={clientSecret1};");
-
-            string environment2Url = "logisticsplugin";
-            string clientId2 = "83d4b16a-8f9c-4a05-a9b4-1c55f85e51fa";
-            string clientSecret2 = "LrI8Q~fpWCD6WzR61Egceu2Ee_DsdzptztM6bcsc";
-
-
-            CrmServiceClient environment2Connection = new CrmServiceClient($"AuthType=ClientSecret;Url=https://{environment2Url}.crm2.dynamics.com/;AppId={clientId2};ClientSecret={clientSecret2};");
+            IOrganizationService environment2Connection = Environment2Service();
 
             var product = new Entity("product");
 
@@ -95,6 +89,17 @@ namespace DynacoopTCC.Logistics.Plugin.Plugins
             }
 
             environment2Connection.Create(product);
+        }
+
+        public static IOrganizationService Environment2Service()
+        {
+            string environment2Url = "logisticsplugin";
+            string clientId2 = "83d4b16a-8f9c-4a05-a9b4-1c55f85e51fa";
+            string clientSecret2 = "LrI8Q~fpWCD6WzR61Egceu2Ee_DsdzptztM6bcsc";
+
+            CrmServiceClient environment2Connection = new CrmServiceClient($"AuthType=ClientSecret;Url=https://{environment2Url}.crm2.dynamics.com/;AppId={clientId2};ClientSecret={clientSecret2};");
+
+            return environment2Connection;
         }
     }
 }
